@@ -74,9 +74,11 @@ class _HomeState extends State<Home> {
                        };
                      });
                    },
-                       style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Color(0x43FDFCFC))),//this shows the method to add custom colors
+                       style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Color(0x43FDFCFC)),
+                            shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)))
+                       ),//this shows the method to add custom colors
                        icon: Icon(Icons.location_on,color: color,),
-                       label: Text('Enter your location',style: TextStyle(color: color,)),
+                       label: Text('Choose location',style: TextStyle(color: color,)),
                  ),
                  ),
                ],

@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:world_clock/services/world_time.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -13,7 +14,7 @@ class _LoadingState extends State<Loading> {
   String time = 'loading';
 
   void setupWorldTime()async {
-    WorldTime instance = WorldTime(location: 'Berlin',flag: 'Germany.jpg', url:'Europe/Berlin' );
+    WorldTime instance = WorldTime(location: 'Kolkata',flag: 'http://www.all-flags-world.com/country-flag/India/flag-india-XL.jpg', url:'Asia/Kolkata' );
     await instance.getTime();
     Navigator.pushReplacementNamed(context, '/home', arguments: {
       'location': instance.location,
@@ -34,9 +35,18 @@ class _LoadingState extends State<Loading> {
     return Scaffold(
       backgroundColor: Colors.grey[900],
       body:Center(
-          child: SpinKitWave(
-            color: Colors.white,
-            size: 80.0,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('World Clock',
+                style: TextStyle(color: Colors.white, fontSize: 65),
+              ),
+              SizedBox(height: 20),
+              SpinKitWave(
+                color: Colors.white,
+                size: 80.0,
+              ),
+            ],
           ),
       )
     );
