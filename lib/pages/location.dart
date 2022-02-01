@@ -1,5 +1,6 @@
 // import 'dart:html';
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:world_clock/services/world_time.dart';
 
@@ -55,7 +56,7 @@ class _LocationState extends State<Location> {
                     },
                     title: Text(location[index].location),
                     leading: CircleAvatar(
-                      backgroundImage: NetworkImage(location[index].flag),
+                      backgroundImage: CachedNetworkImageProvider(location[index].flag),
                     ),
                   ),
                 ),

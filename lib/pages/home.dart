@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -21,7 +22,7 @@ class _HomeState extends State<Home> {
     String daytime = data['daytime'];  //for storing the status of day
 
     switch(daytime){  //for adjusting the color of the texts according to daytime
-      case 'morning.jpg': color = Colors.black;break;
+      case 'morning.jpg': color = Colors.white;break;
       case 'afternoon.jpg': color = Colors.black;break;
       case 'evening.jpg': color = Colors.black;break;
       case 'night.jpg': color = Colors.white;break;
@@ -48,9 +49,9 @@ class _HomeState extends State<Home> {
                  SizedBox(height: 20),
                  Row(
                    mainAxisAlignment: MainAxisAlignment.center,
-                   children: [
+                   children: [   //data['flag']
                      CircleAvatar(
-                       backgroundImage: NetworkImage(data['flag']),
+                       backgroundImage: CachedNetworkImageProvider(data['flag']),
                        radius: 30,
                      ),
                      SizedBox(width: 20),
