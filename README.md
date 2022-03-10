@@ -1,16 +1,10 @@
 # world_clock
 
-A new Flutter application.
+Gives time of a selected location and changes background according to the daytime.
 
-## Getting Started
+# Screenshots
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://user-images.githubusercontent.com/79049365/157682051-a208b596-7284-418d-94d0-6bda310d1dc7.jpg" height="800">
+<img src="https://user-images.githubusercontent.com/79049365/157682080-f7a86af1-c5c9-4b80-9452-a1c089481021.jpg" height="800">
+<img src="https://user-images.githubusercontent.com/79049365/157682105-643e9db2-ffd5-4e43-ad7b-7c8d31d710e0.jpg" height="800">
